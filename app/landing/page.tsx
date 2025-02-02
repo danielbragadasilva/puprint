@@ -180,7 +180,7 @@ export default function Landing({
           </motion.div>
 
           <motion.div custom={2} variants={fadeUpVariants} initial="hidden" animate="visible">
-            <p className="text-base sm:text-lg md:text-xl text-white/80 mb-8 leading-relaxed font-light tracking-wide max-w-xl mx-auto px-4">
+            <p className="text-base sm:text-lg md:text-xl text-white/0 mb-8 leading-relaxed font-light tracking-wide max-w-xl mx-auto px-4">
               Gere códigos QR e mensagens personalizadas para sua impressora térmica.
             </p>
           </motion.div>

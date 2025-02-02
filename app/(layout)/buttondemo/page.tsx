@@ -82,7 +82,7 @@ export default function ButtonDemo({
         className={cn("relative bg-sky-500 hover:bg-sky-600 p-6 text-lg font-semibold rounded-lg", showParticles && "scale-195", "transition-transform duration-100", className)}
         {...props}
       >
-        {children}Clique
+        {children}Demonstração
         <MousePointerClick className="h-4 w-4" />
       </Button>
     </>

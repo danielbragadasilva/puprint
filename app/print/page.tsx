@@ -37,7 +37,7 @@ export default function PrintPage() {
   };
 
   return (
-    <div className="bg-gradient-to-t from-[#e2f3fe] via-transparent to-[#e2f3fe]/40">
+    <div className=" min-h-screen w-full bg-gradient-to-t from-[#e2f3fe] via-transparent to-[#e2f3fe]/40 content-end">
     <div className="flex flex-col lg:flex-row gap-6 p-4 max-w-4xl mx-auto drop-shadow-2xl">
       {/* Form Section */}
       <Card className="flex-1 p-4">
