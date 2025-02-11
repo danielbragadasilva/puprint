@@ -5,7 +5,7 @@ export default function Footer (){
   
         <div className="text-center">    
           <div className="mt-3">
-            <p className="text-neutral-800">Desenvolvido por <a className="text-sky-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium" href="https://www.linkedin.com/in/daniel-braga-565899128/">Daniel</a></p>
+            <p className="text-neutral-800">Desenvolvido por <a className="text-neutral-800 decoration-2 hover:underline focus:outline-none focus:underline font-medium" href="https://www.linkedin.com/in/daniel-braga-565899128/">Daniel</a></p>
             <p className="text-neutral-800 text-xs">
               © Copyright 2025 PuPrint.
             </p>
