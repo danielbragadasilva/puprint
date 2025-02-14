@@ -3,8 +3,10 @@
 import { motion } from "framer-motion"
 import { Pacifico } from "next/font/google"
 import { cn } from "@/lib/utils"
-import ButtonDemo from "./buttoncta/page"
 import Footer from "./footer/page"
+import { Button } from "@/components/ui/button"
+import { MousePointerClick } from "lucide-react"
+import { useRouter } from "next/navigation"
 
 
 
@@ -80,15 +82,11 @@ function ElegantShape({
   )
 }
 
-export default function Landing({
-  badge = "PuPrint",
-  title1 = "Remarketing",
-  title2 = "No QRcode",
-}: {
-  badge?: string
-  title1?: string
-  title2?: string
-}) {
+export default function Page() {
+  const badge = "PuPrint";
+  const title1 = "Remarketing";
+  const title2 = "No QRcode";
+  const router = useRouter();
   const fadeUpVariants = {
     hidden: { opacity: 0, y: 30 },
     visible: (i: number) => ({
@@ -101,6 +99,7 @@ export default function Landing({
       },
     }),
   }
+  
 
   return (
     <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-[#024a71]">
@@ -188,7 +187,11 @@ export default function Landing({
           </motion.div>
 
            <motion.div custom={2} variants={fadeUpVariants} initial="hidden" animate="visible">
-            <ButtonDemo/>
+           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 1.1 }}>
+            <Button onClick={() => router.push("/print")} className="relative bg-sky-500 hover:bg-sky-600 p-6 text-lg font-semibold rounded-lg transition-transform duration-100">
+            Demonstração<MousePointerClick className="h-4 w-4" />
+            </Button>
+          </motion.div>
           </motion.div> 
  
           <motion.div custom={3} variants={fadeUpVariants} initial="hidden" animate="visible">
