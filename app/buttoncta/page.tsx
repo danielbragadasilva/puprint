@@ -4,14 +4,16 @@ import { useState, useRef, type RefObject } from "react"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { motion, AnimatePresence } from "motion/react"
-import { cn } from "@/lib/utils"
-import type { ButtonProps } from "@/components/ui/button"
+// import { cn } from "@/lib/utils"
+import { ButtonProps } from "@/components/ui/button"
 import { MousePointerClick } from "lucide-react"
 
-interface ParticleButtonProps extends ButtonProps {
+interface ParticleButtonProps extends ButtonProps, React.HTMLAttributes<HTMLButtonElement> {
   onSuccess?: () => void
   successDuration?: number
+  className?: string 
 }
+
 
 function SuccessParticles({
   buttonRef,
@@ -59,6 +61,7 @@ export default function ButtonDemo({
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   onSuccess,
   successDuration = 1000,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   className,
   ...props
 }: ParticleButtonProps) {
@@ -79,12 +82,12 @@ export default function ButtonDemo({
   return (
     <>
       {showParticles && <SuccessParticles buttonRef={buttonRef as RefObject<HTMLButtonElement>} />}
-      <Button
-        ref={buttonRef}
-        onClick={handleClick}
-        className={cn("relative bg-sky-500 hover:bg-sky-600 p-6 text-lg font-semibold rounded-lg", showParticles && "scale-195", "transition-transform duration-100", className)}
-        {...props}
-      >
+      <Button className="bg-sky-500 hover:bg-sky-600"
+  ref={buttonRef}
+  onClick={handleClick}
+  {...(props as Record<string, unknown>)} 
+>
+
         {children}Demonstração
         <MousePointerClick className="h-4 w-4" />
       </Button>
