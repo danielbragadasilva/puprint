@@ -32,7 +32,7 @@ O puprit é um gerador de QRcode com foco para impressoras térmicas, quantas ve
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/iW0uNDoFex0M9QiFT8Vn4P/DevLinks-%E2%80%A2-Projeto-Discover-Daniboy?type=design&node-id=10%3A620&mode=design&t=pgvAz8AxgoYhnwSE-1).
+Você pode visualizar o layout do projeto através [DESSE LINK](https://puprint-c5w6.vercel.app/).
 
 ## 📝 Licença
 
@@ -40,7 +40,7 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Feito com ♥ by Daniboy 👋 [Me siga no Linkedin](https://www.linkedin.com/in/daniel-braga-565899128/)
+Feito por ♥ by Daniboy 👋 [Me siga no Linkedin](https://www.linkedin.com/in/daniel-braga-565899128/)
 
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
