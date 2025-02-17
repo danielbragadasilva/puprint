@@ -168,7 +168,7 @@ export default function PrintPage() {
             <div className="font-bold mb-2 uppercase">{formData.cupom}</div>
           </div>
 
-          <div className="text-center mb-6 whitespace-normal">
+          <div className="text-center mb-6 whitespace-normal break-words">
             {formData.message}
           </div>
 
